@@ -1,0 +1,164 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background: linear-gradient(to right, #a8aa14, #d9de4d); 
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+.profile-photo {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;
+    object-fit: cover; 
+    border: 3px solid #a8aa14; 
+}
+nav {
+    background-color: #a8aa14; 
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+nav ul li a:hover {
+    background-color: #a8aa14; 
+    border-radius: 8px;
+}
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+section p {
+    font-size: 1.1rem;
+    color: #555; 
+    line-height: 1.8;
+}
+article {
+    margin-bottom: 40px;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+form label {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+}
+form input, form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+}
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #a8aa14; 
+    box-shadow: 0 0 5px rgba(30, 61, 88, 0.6);
+}
+form button {
+    background-color: #a8aa14; 
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+form button:hover {
+    background-color: #a8aa14; 
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+footer a {
+    color: #a8aa14; 
+    text-decoration: none;
+    font-weight: bold;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    section h2 {
+        font-size: 2rem;
+    }
+    form {
+        padding: 15px;
+    }
+    form input, form textarea {
+        font-size: 1rem;
+    }
+    form button {
+        font-size: 1rem;
+    }   
+}
